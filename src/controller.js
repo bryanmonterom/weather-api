@@ -11,7 +11,7 @@ export function show(e) {
 async function getGeolocation(location) {
   try {
     const response = await fetch(
-      `http://api.openweathermap.org/geo/1.0/direct?q=${location}&limit=1&appid=${key()}`
+      `https://api.openweathermap.org/geo/1.0/direct?q=${location}&limit=1&appid=${key()}`
     );
     const loc = await response.json();
     return loc;
