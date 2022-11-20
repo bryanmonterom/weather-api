@@ -4,27 +4,49 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>The Weather App</title>
+    <link rel="stylesheet" href="./css/style.css">
+<script src="https://kit.fontawesome.com/6a86f3ad45.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="container">
-        <div class="form">
-            <input type="text" name="location" id="location" placeholder="Type a location ...">
+        <div class="">
+            <h1 class="logo">The Weather App</h1>
+            <form id="formWeather" class="form">
+                <div class="form-group" >
+                    <input  type="text" placeholder="Type a location ..." name="location" id="location" data-validate="required" >
+                    <small role="alert" aria-hidden="true" data-validation-message="required">
+                        Please enter the Location.
+                    </small>
+                </div>
+                <div class="form-group" >
+                    <button type="submit">
+                        <i class="fa-solid fa-magnifying-glass-location big" ></i>
+                    </button>
+                    </div>
+            </form>
         </div>
 
-        <div class="current-weather-container">
-            <div class="current-weather">
-                <div class="current-temp"></div>
-                <div class="current-clouds"></div>
-            </div>
-            <div class="weather-items">
-                <div class="weather-item"></div>
-                <div class="weather-item"></div>
-                <div class="weather-item"></div>
-                <div class="weather-item"></div>
-                <div class="weather-item"></div>
-            </div>
+        <div class="weather" id="weather">
+
         </div>
+
+     
+        <div class="weather-forecastData-container" id="weather-forecastData-container">
+
+        </div>
+
+        <div class="weather-sunInfo-Container" id="weather-sunInfo-Container">
+       
+        </div>
+     
+
+        <div class="weather-detail" id="weather-detail">
+
+        </div>
+
+
+
     </div>
 </body>
 <script src="./index.bundle.js"></script>

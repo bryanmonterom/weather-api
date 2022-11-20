@@ -1,0 +1,291 @@
+
+@font-face {
+    font-family: "Hugh-Whittle";
+    src: url('../fonts/Hugh-Whittle.ttf') format("truetype");
+
+}
+
+@font-face {
+    font-family: "Miraikato";
+    src: url('../fonts/Miraikato.otf') format("truetype");
+}
+
+@font-face {
+    font-family: "MontserratAlternates-Black.otf";
+    src: url('./MontserratAlternates-Black.otf') format("truetype");
+}
+
+.logo{
+    font-family: "Miraikato";
+    color: white;
+    font-size: 60px;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Work Sans', sans-serif;
+
+}
+
+.current-weather-items{
+    text-align: center;
+}
+
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width:100%;
+    height: 100%;
+}
+
+.icon-sun{
+    width: 50px;
+    height: auto;
+}
+
+.circle{
+    border-radius: 100%;
+    width: 105px;
+    height: 105px; 
+    margin: 1px;
+background-color: #0380c2;
+}
+
+.current-weather-container{
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+ 
+
+}
+
+.current-weather-hr{
+    border-left: 1px solid #0380c2;
+    height: 75%;
+}
+
+.current-weather{
+    display: flex;
+    flex-direction: row;
+    height: 80px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+
+}
+
+.weather-items, .current-weather-container,.weather-forecastData,.weather-sunInfo,form{
+    padding: 20px;
+    background: white;
+    border: 1px solid gray;
+    border-radius: 10px;
+    margin: 10px;
+    width: 450px;
+    opacity: 0.8;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+flex-wrap: wrap;    
+
+}
+
+
+
+.sunset{
+    padding: auto;
+    width: 120px;
+}
+.weather-items{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 450px;
+}
+
+.weather-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.weather-sunInfo{
+ display: flex;
+ justify-content: center;
+ text-align: center;
+}
+
+.current-weather-item-header{
+    font-size: 40px;
+}
+
+.weather-item-label,.label{
+color: #0380c2;
+font-weight: bold;
+}
+
+
+input[type="text"]{
+    border: none;
+    border-bottom: 1px solid #0380c2;
+    padding: 15px;
+    width: 280px;
+}
+html { 
+    background: url("https://www.photohdx.com/images/2015/11/blue-sky-clouds-texture-background.jpg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+.form{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+}
+
+textarea:focus, input:focus{
+    outline: none;
+}
+
+button[type="submit"]{
+    border: none;
+    background-color: transparent;
+}
+
+.form-group{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 5px;
+    height: 75px;
+}
+
+.big{
+    font-size: 50px;
+    color: #0380c2;
+}
+
+.big:hover{
+    font-size: 50px;
+    color: #52b1e4;
+
+}
+
+.hidden{
+    display: none;
+}
+
+[data-validation-message] {
+    display: none;
+}
+[data-validation-message].message-visible {
+    display: block;
+}
+
+input.invalid {
+    border-color: brown;
+    border-width: 5px;
+  }
+
+.forecast-container{
+    display: flex;
+    flex-direction: row;
+    overflow: auto;
+    text-align: center;
+
+}
+
+.forecast-items{
+    padding: 10px;
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .logo{
+        text-align: center;
+    }
+
+    .weather, .weather-forecastData-container,.weather-forecastData, .weather-sunInfo-Container,.weather-detail {
+        width: 100%;
+    }
+    
+
+    .weather-items, .current-weather-container,.weather-forecastData,.weather-sunInfo,form,.weather-forecastData-container{
+        width: 100%;
+    margin: 2px;
+
+    }
+
+    .current-weather-container{
+        padding: 0;
+    }
+    
+    .forecast-items{
+        /* padding: 10px; */
+        font-weight: bold;
+    }
+    .forecast-container{
+justify-content: center;
+overflow: auto;
+width: 100%;
+
+}
+
+.weather-items{
+    /* flex-direction: column; */
+flex-wrap: wrap;    
+
+}
+
+.form{
+    padding: 2px;
+    margin: 0;
+}
+input[type="text"]{
+    border: none;
+    border-bottom: 1px solid #0380c2;
+    padding: 15px;
+    width: 90%;
+}
+
+.weather-detail,.weather-sunInfo-Container,.weather-forecastData, .weather,.forecast-container{
+    width: 100%;
+    margin: 0;
+    flex-wrap: wrap;
+}
+
+.current-weather{
+    flex-direction: column;
+    height: auto;
+    width:100%;
+    padding: 5px;
+
+
+}
+
+.circle, .icon-cloud{
+    display: none;
+}
+
+.weather-items, .current-weather-container,.weather-forecastData,.weather-sunInfo,form{
+    padding: 8px;
+}    
+
+  }
